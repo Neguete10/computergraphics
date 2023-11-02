@@ -1,0 +1,104 @@
+# Blender MTL File: '23.10.2021.blend'
+# Material Count: 9
+
+newmtl Material
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\bodygroup_2\\tunique_2\\tunique_None_Normal.png
+map_Kd C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\bodygroup_2\\tunique_2\\tunique_None_BaseMap.png
+
+newmtl Material.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\bodygroup_1\\cape_5\\cape_Material.001_Normal.png
+map_Kd C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\bodygroup_1\\cape_5\\cape_Material.001_BaseMap.png
+
+newmtl Material.008
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\sapogi\\substance\\sapogi_leather\\sapogi_None_BaseMap.png
+
+newmtl None.001
+Ns 500.000001
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\plash\\ready_textures\\ring_bomj\\ring_bomj_None_BaseMap.png
+
+newmtl body_black
+Ns 900.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\Texture\\Body\\body\\body_black.dds
+
+newmtl coat
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Bump C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\plash\\ready_textures\\bake_normal_map_2048.png
+map_Kd C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\plash\\ready_textures\\bake_1024.png
+
+newmtl eyes
+Ns 900.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Adam Gezuev\\Desktop\\blender\\eyes_diff.png
+
+newmtl pant
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\Texture\\Pant\\UnderGarment_Pants_01_D.dds
+
+newmtl van_facemap
+Ns 900.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Adam Gezuev\\Desktop\\blender\\begui[FR]\\Texture\\Body\\facemaps\\van_facemap.jpg
