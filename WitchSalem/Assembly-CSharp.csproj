@@ -74,6 +74,8 @@
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\DitheringModel.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\Scripts\CharacterNavigation.cs" />
+    <Compile Include="Assets\Scripts\VerdictScript.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
@@ -91,6 +93,7 @@
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />
+    <Compile Include="Assets\Scripts\EditCardEvidence.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\BloomModel.cs" />
     <Compile Include="Assets\Church Interior\Scripts\RotateMoveCamera.cs" />
@@ -98,6 +101,7 @@
     <Compile Include="Assets\Church Interior\Scripts\ImageText.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\PostProcessingComponent.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\Scripts\EditCardPopup.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Components\DitheringComponent.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
@@ -822,8 +826,14 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
@@ -855,8 +865,14 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
