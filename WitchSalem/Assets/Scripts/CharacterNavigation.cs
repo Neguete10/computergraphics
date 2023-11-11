@@ -6,6 +6,8 @@ public class CharacterNavigationController : MonoBehaviour
     public Transform destinationPoint; // Assign through Unity Inspector
     private NavMeshAgent agent;
     Animator animator;
+    bool walking = false;
+    VerdictScript verdict;
     //private static readonly int IsWalkingHash = Animator.StringToHash("IsWalking");
 
     // Start is called before the first frame update
@@ -13,6 +15,8 @@ public class CharacterNavigationController : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        //verdict = GetComponent<VerdictScipt>();
+        verdict = GameObject.Find("Canvas").GetComponent<VerdictScript>();
 
         // Start off with the character moving to the destination
         MoveToDestination();
@@ -25,16 +29,22 @@ public class CharacterNavigationController : MonoBehaviour
         //bool isMoving = agent.hasPath && !agent.isStopped && agent.remainingDistance > agent.stoppingDistance;
 
         // Set the IsWalking boolean in the Animator to turn on/off the walking animation
-        if(agent.transform.position.z <= 9)
+        if(agent.transform.position.z <= 9 && !verdict.verdictSelected)
         {
             animator.SetBool("IsWalking", true);
-            Debug.Log("walking true: " + animator.GetBool("IsWalking"));
+            walking = true;
         }
-        else
+        else 
         {
             animator.SetBool("IsWalking", false);
-            Debug.Log("walking false: " + animator.GetBool("IsWalking"));
             agent.ResetPath();
+        }
+        if (verdict.verdictSelected)
+        {
+            Vector3 posVec = new Vector3(8.61f, 0f, 1f);
+            agent.transform.position = posVec;
+            verdict.verdictSelected = false;
+            //unrender person if not selected, render person that is selected
         }
 
         // If the character is close enough to the destination, stop the agent

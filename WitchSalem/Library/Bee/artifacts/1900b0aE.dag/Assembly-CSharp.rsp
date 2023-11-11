@@ -411,6 +411,7 @@
 "Assets/Scripts/gameover.cs"
 "Assets/Scripts/ImageSlideshow.cs"
 "Assets/Scripts/menu.cs"
+"Assets/Scripts/VerdictScript.cs"
 -langversion:9.0
 
 /deterministic
