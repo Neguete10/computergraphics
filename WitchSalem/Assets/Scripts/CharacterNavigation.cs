@@ -43,6 +43,8 @@ public class CharacterNavigationController : MonoBehaviour
         {
             Vector3 posVec = new Vector3(8.61f, 0f, 1f);
             agent.transform.position = posVec;
+            Quaternion rotQuat = new Quaternion(0f, 0f, 0f, 0f); 
+            agent.transform.rotation = rotQuat; 
             verdict.verdictSelected = false;
             //unrender person if not selected, render person that is selected
         }

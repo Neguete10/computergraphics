@@ -406,6 +406,7 @@
 "Assets/Church Interior/Scripts/InteractiveObject.cs"
 "Assets/Church Interior/Scripts/RotateMoveCamera.cs"
 "Assets/Scripts/CharacterNavigation.cs"
+"Assets/Scripts/CharacterSelection.cs"
 "Assets/Scripts/EditCardEvidence.cs"
 "Assets/Scripts/EditCardPopup.cs"
 "Assets/Scripts/gameover.cs"

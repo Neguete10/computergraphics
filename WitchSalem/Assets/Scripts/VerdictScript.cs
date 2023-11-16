@@ -11,12 +11,15 @@ public class VerdictScript : MonoBehaviour
     public Button guilty;
     public Button innocent;
     EditCardPopup card;
+    CharacterSelection charSelect;
     // Start is called before the first frame update
     void Start()
     {
+        verdictSelected = false;
         guilty.onClick.AddListener(delegate { VerdictSelected("guilty"); });
         innocent.onClick.AddListener(delegate { VerdictSelected("innocent"); });
         card = GetComponent<EditCardPopup>();
+        charSelect = GetComponent<CharacterSelection>();
     }
 
     // Update is called once per frame
@@ -39,5 +42,9 @@ public class VerdictScript : MonoBehaviour
         }
 
         verdictSelected = true;
+        card.evidenceSelected = false;
+        charSelect.charSelected = false;
+        Debug.Log("evidence" + card.evidenceSelected);
+        Debug.Log("char select" + charSelect.charSelected);
     }
 }

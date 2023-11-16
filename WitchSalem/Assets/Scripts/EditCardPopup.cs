@@ -25,7 +25,9 @@ public class EditCardPopup : MonoBehaviour
     public string[] innocentEvidenceName;
     public string[] innocentEvidenceDescription;
     public bool guilty;
-    VerdictScript verdict;
+    VerdictScript verdictScript;
+    public bool verdict;
+    public bool evidenceSelected;
     
 
 
@@ -39,7 +41,7 @@ public class EditCardPopup : MonoBehaviour
 
         guilty = true;
         evidence = new string[5, 2];
-        verdict = GetComponent<VerdictScript>();
+        verdictScript = GetComponent<VerdictScript>();
         guiltyEvidenceName = new string[3] { "Knife", "Doll", "Dead Cat" };
         guiltyEvidenceDescription = new string[3] { "This knife with a twisted blade with dark engravings was found with the suspect at the time of arrest.",
                             "The doll has drops of blood and multiple stab marks.", "This cat is a perfect representation of the devil's work."};
@@ -48,6 +50,7 @@ public class EditCardPopup : MonoBehaviour
                             "Natural remedies may be a mark of the antichrist.", "They are accused of being vegetarian and having a box full of chicken feet.",
                             "Luke-warm Christian. Poser.", "Schizofrenic"};
         SelectEvidence();
+        evidenceSelected = true;
         
         button1.onClick.AddListener(delegate { UpdateText(evidence[0, 1], evidence[0, 0]); });
         button2.onClick.AddListener(delegate { UpdateText(evidence[1, 1], evidence[1, 0]); });
@@ -74,9 +77,10 @@ public class EditCardPopup : MonoBehaviour
     // Update is not needed unless there's logic to be processed every frame
     private void Update()
     {
-        if (verdict)
+        if (!evidenceSelected)
         {
-            //SelectEvidence();
+            SelectEvidence();
+            evidenceSelected = true;
 
         }
     }
@@ -139,7 +143,7 @@ public class EditCardPopup : MonoBehaviour
                 int iIndex = guiltyIndex.Next() % 5;
                 string iName = innocentEvidenceName[iIndex];
                 string iDesc = innocentEvidenceDescription[iIndex];
-                if (tempInnName.Contains(iName))
+                if (tempInnName.Contains(iName) || tempGuiltyName.Contains(iName))
                 {
                     i--;
                 }
@@ -190,7 +194,7 @@ public class EditCardPopup : MonoBehaviour
                 int iIndex = guiltyIndex.Next() % 5;
                 string iName = innocentEvidenceName[iIndex];
                 string iDesc = innocentEvidenceDescription[iIndex];
-                if (tempInnName.Contains(iName))
+                if (tempInnName.Contains(iName) || tempGuiltyName.Contains(iName))
                 {
                     i--;
                 }
@@ -220,11 +224,6 @@ public class EditCardPopup : MonoBehaviour
             int i = shuffleIndex.Next(count--);
             (evidence[i,0], evidence[count,0]) = (evidence[count,0], evidence[i,0]);
             (evidence[i, 1], evidence[count, 1]) = (evidence[count, 1], evidence[i, 1]);
-        }
-        for (int i = 0; i < 5; i++)
-        {
-            Debug.Log(evidence[i, 0]);
-            Debug.Log(evidence[i, 1]);
         }
     }
 }

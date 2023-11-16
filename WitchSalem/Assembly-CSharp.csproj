@@ -106,6 +106,7 @@
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Components\DitheringComponent.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Scripts\CharacterSelection.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
