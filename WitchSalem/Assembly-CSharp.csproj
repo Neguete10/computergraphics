@@ -53,6 +53,7 @@
     <UnityVersion>2022.3.7f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -69,8 +70,8 @@
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\UserLutModel.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-    <Compile Include="Assets\Scripts\ImageSlideshow.cs" />
     <Compile Include="Assets\Scripts\loadGameOverScene.cs" />
+    <Compile Include="Assets\Scripts\ImageSlideshow.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\Models\DitheringModel.cs" />
     <Compile Include="Assets\Church Interior\PostProcessing\Runtime\PostProcessingBehaviour.cs" />

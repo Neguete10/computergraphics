@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - VerdictScript
     - crosshairRaycast
     - gameover
+    - loadGameOverScene
     - menu
     - pauseScript
     Nobi.UiRoundedCorners.dll:
@@ -154,6 +155,9 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
+    fullTypeName: loadGameOverScene
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
     fullTypeName: VerdictBtnUI
     methodName: ToggleButton
   - assembly: UnityEngine.CoreModule
@@ -232,47 +236,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1634}
     - Class: 114
-      Script: {instanceID: 1954}
+      Script: {instanceID: 1952}
     - Class: 114
-      Script: {instanceID: 2238}
+      Script: {instanceID: 2640}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2844}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 5062}
     - Class: 114
-      Script: {instanceID: 3154}
+      Script: {instanceID: 5240}
     - Class: 114
-      Script: {instanceID: 4112}
+      Script: {instanceID: 5626}
     - Class: 114
-      Script: {instanceID: 4424}
+      Script: {instanceID: 5774}
     - Class: 114
-      Script: {instanceID: 4654}
+      Script: {instanceID: 6092}
     - Class: 114
-      Script: {instanceID: 5144}
+      Script: {instanceID: 7888}
     - Class: 114
-      Script: {instanceID: 5286}
+      Script: {instanceID: 7956}
     - Class: 114
-      Script: {instanceID: 5330}
+      Script: {instanceID: 8020}
     - Class: 114
-      Script: {instanceID: 5502}
+      Script: {instanceID: 8088}
     - Class: 114
-      Script: {instanceID: 5738}
+      Script: {instanceID: 8096}
     - Class: 114
-      Script: {instanceID: 5892}
+      Script: {instanceID: 8104}
     - Class: 114
-      Script: {instanceID: 6216}
+      Script: {instanceID: 8128}
     - Class: 114
-      Script: {instanceID: 6430}
+      Script: {instanceID: 8164}
     - Class: 114
-      Script: {instanceID: 6656}
+      Script: {instanceID: 8176}
     - Class: 114
-      Script: {instanceID: 7462}
+      Script: {instanceID: 8192}
     - Class: 114
-      Script: {instanceID: 7606}
+      Script: {instanceID: 8212}
     - Class: 114
-      Script: {instanceID: 7608}
+      Script: {instanceID: 8228}
+    - Class: 114
+      Script: {instanceID: 8252}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -337,21 +343,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1634}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2640}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2844}
     - Class: 114
-      Script: {instanceID: 3154}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 3992}
+      Script: {instanceID: 5062}
     - Class: 114
-      Script: {instanceID: 5144}
+      Script: {instanceID: 5626}
     - Class: 114
-      Script: {instanceID: 5738}
+      Script: {instanceID: 5774}
     - Class: 114
-      Script: {instanceID: 5892}
+      Script: {instanceID: 6092}
     - Class: 114
-      Script: {instanceID: 6216}
+      Script: {instanceID: 7988}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -394,7 +400,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 6756}
+      Script: {instanceID: 8044}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -433,27 +439,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1634}
     - Class: 114
-      Script: {instanceID: 2230}
+      Script: {instanceID: 2226}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2640}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2844}
     - Class: 114
-      Script: {instanceID: 3154}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 4180}
+      Script: {instanceID: 4120}
     - Class: 114
-      Script: {instanceID: 4436}
+      Script: {instanceID: 4370}
     - Class: 114
-      Script: {instanceID: 5144}
+      Script: {instanceID: 5062}
     - Class: 114
-      Script: {instanceID: 5738}
+      Script: {instanceID: 5626}
     - Class: 114
-      Script: {instanceID: 5892}
+      Script: {instanceID: 5774}
     - Class: 114
-      Script: {instanceID: 6216}
+      Script: {instanceID: 6092}
     - Class: 114
-      Script: {instanceID: 7898}
+      Script: {instanceID: 8024}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -545,12 +551,6 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 6fd5a510c685ecc4d436dd2f31da8ac4
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CharacterNavigationController
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -623,12 +623,6 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
-      Hash: daf583db78d49584fe488bb962b90b24
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityEngine.PostProcessing
-    className: PostProcessingProfile
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -687,12 +681,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDropdownValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: EditCardEvidence
   - hash:
       serializedVersion: 2
       Hash: a4d905db69ca7f45f45458ae380fb66f
@@ -822,12 +810,6 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: gameover
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionStay2DMessageListener
@@ -849,12 +831,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: VariablesSaver
-  - hash:
-      serializedVersion: 2
-      Hash: 8c300bab62f7b627016589b5b71c8b65
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CharacterSelection
   - hash:
       serializedVersion: 2
       Hash: 34096a327d779b7c96a3e390f3559143
@@ -905,12 +881,6 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 14a0eaa0809be06b0125a5b5bcfe19c1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: VerdictScript
-  - hash:
-      serializedVersion: 2
       Hash: fcc569162a8d9bd9df34e8c9dee84212
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -927,12 +897,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerClickMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 80cc13c45478f0ec38f1a3ce4ab8bb1d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: VerdictBtnUI
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1049,12 +1013,6 @@ ScriptsOnlyBuild:
     className: NavMeshModifierVolume
   - hash:
       serializedVersion: 2
-      Hash: 956c2a3108578620778d40040ce31425
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: pauseScript
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1091,22 +1049,10 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: 26cb8b7caa468fd1307c7335f8ecc6ca
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityEngine.PostProcessing
-    className: PostProcessingBehaviour
-  - hash:
-      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
-  - hash:
-      serializedVersion: 2
-      Hash: f1cacb67b6d239b72493117ad9d8c0c1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ExampleWheelController
   - hash:
       serializedVersion: 2
       Hash: 6a356b04c25c0bb008c1b24bf8b0f996
@@ -1187,12 +1133,6 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 745b3db9b521aaf10b9072e351db0d60
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: EditCardPopup
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1223,12 +1163,6 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 9112a01cb97717cd28fd66330a94ada3
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: InteractiveObject
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1239,12 +1173,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerEnter2DMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 6e9a16081a1e3ca15241dc764dcec244
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ImageSlideshow
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1281,12 +1209,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerDownMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: resumeScript
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1343,12 +1265,6 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 7bec600fe625f5fc211d5e85ddd975c0
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ImageText
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1373,18 +1289,6 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
-      Hash: 7623574fa08b19398db6ff8bfc7d0fbc
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: crosshairRaycast
-  - hash:
-      serializedVersion: 2
-      Hash: fa061aea63a19c09389cdb55c25c01d9
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: RotateMoveCamera
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1401,12 +1305,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: menu
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1437,10 +1335,124 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: fa061aea63a19c09389cdb55c25c01d9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RotateMoveCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: loadGameOverScene
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EditCardEvidence
+  - hash:
+      serializedVersion: 2
+      Hash: f1cacb67b6d239b72493117ad9d8c0c1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ExampleWheelController
+  - hash:
+      serializedVersion: 2
+      Hash: 896b705fb94ec6bd17cc8af7c67fe6cf
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: gameover
+  - hash:
+      serializedVersion: 2
+      Hash: 956c2a3108578620778d40040ce31425
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: pauseScript
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: menu
+  - hash:
+      serializedVersion: 2
+      Hash: 6e9a16081a1e3ca15241dc764dcec244
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ImageSlideshow
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: resumeScript
+  - hash:
+      serializedVersion: 2
+      Hash: 7bec600fe625f5fc211d5e85ddd975c0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ImageText
+  - hash:
+      serializedVersion: 2
+      Hash: 8c300bab62f7b627016589b5b71c8b65
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CharacterSelection
+  - hash:
+      serializedVersion: 2
+      Hash: 9112a01cb97717cd28fd66330a94ada3
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: InteractiveObject
+  - hash:
+      serializedVersion: 2
+      Hash: daf583db78d49584fe488bb962b90b24
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityEngine.PostProcessing
+    className: PostProcessingProfile
+  - hash:
+      serializedVersion: 2
+      Hash: 80cc13c45478f0ec38f1a3ce4ab8bb1d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: VerdictBtnUI
+  - hash:
+      serializedVersion: 2
+      Hash: 7623574fa08b19398db6ff8bfc7d0fbc
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: crosshairRaycast
+  - hash:
+      serializedVersion: 2
+      Hash: 6fd5a510c685ecc4d436dd2f31da8ac4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CharacterNavigationController
+  - hash:
+      serializedVersion: 2
+      Hash: 906059eb33d41dc24e49b3f081753387
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EditCardPopup
+  - hash:
+      serializedVersion: 2
+      Hash: d57b347c27da2eb783f70542a99f4be3
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: VerdictScript
+  - hash:
+      serializedVersion: 2
+      Hash: 26cb8b7caa468fd1307c7335f8ecc6ca
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityEngine.PostProcessing
+    className: PostProcessingBehaviour
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Intro.unity
   - Assets/Church Interior/Demo.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: "C:/Users/Henri/\xC1rea de Trabalho/computergraphics/WitchSalem.exe"
+  playerPath: C:/Users/Owner/WitchSalem.exe

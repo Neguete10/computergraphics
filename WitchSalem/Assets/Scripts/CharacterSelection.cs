@@ -39,7 +39,7 @@ public class CharacterSelection : MonoBehaviour
     {
         if (!charSelected)
         {
-            Debug.Log(charSelected + "in char selection");
+            //Debug.Log(charSelected + "in char selection");
             SelectCharacter();
             charSelected = true;
         }

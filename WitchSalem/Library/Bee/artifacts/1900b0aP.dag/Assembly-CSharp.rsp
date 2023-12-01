@@ -365,6 +365,7 @@
 "Assets/Scripts/EditCardPopup.cs"
 "Assets/Scripts/gameover.cs"
 "Assets/Scripts/ImageSlideshow.cs"
+"Assets/Scripts/loadGameOverScene.cs"
 "Assets/Scripts/menu.cs"
 "Assets/Scripts/pauseScript.cs"
 "Assets/Scripts/VerdictBtnUI.cs"
