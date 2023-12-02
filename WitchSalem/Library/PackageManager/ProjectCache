@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638351721962562204
-    m_Hash: 2236958465
+      ticks: 638368806730006629
+    m_Hash: 4030266877
   m_LockFileStatus:
     m_FilePath: C:/Users/Owner/computergraphics/WitchSalem/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638351721962572175
-    m_Hash: 2340034683
+      ticks: 638368806730006629
+    m_Hash: 3957447795
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,63 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/Owner/computergraphics/WitchSalem/Packages
 m_EditorVersion: 2022.3.7f1 (b16b3b16c7a0)
 m_ResolvedPackages:
+- packageId: com.nobi.roundedcorners@https://github.com/kirevdokimov/Unity-UI-Rounded-Corners.git
+  testable: 0
+  isDirectDependency: 1
+  version: 3.3.1
+  source: 5
+  resolvedPath: C:\Users\Owner\computergraphics\WitchSalem\Library\PackageCache\com.nobi.roundedcorners@8862398817
+  assetPath: Packages/com.nobi.roundedcorners
+  name: com.nobi.roundedcorners
+  displayName: UI Rounded Corners
+  author:
+    name: 
+    email: 
+    url: 
+  category: UI
+  type: 
+  description: This package provides components and shaders that allow you to add
+    rounded corners to UI elements!
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - UI
+  - Shader
+  - Cg
+  - Hlsl
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.ai.navigation@1.1.5
   testable: 0
   isDirectDependency: 1
@@ -3211,6 +3268,7 @@ m_ResolvedPackages:
     - 1.3.7
     - 1.3.8
     - 1.3.9
+    - 1.4.0
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -3226,6 +3284,7 @@ m_ResolvedPackages:
     - 1.3.7
     - 1.3.8
     - 1.3.9
+    - 1.4.0
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12

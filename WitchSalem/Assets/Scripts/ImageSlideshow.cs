@@ -62,9 +62,9 @@ public class ImageSlideshow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Cursor.visible = false;
+        //Cursor.visible = false;
         //Screen.lockCursor = true;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
 
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
 
